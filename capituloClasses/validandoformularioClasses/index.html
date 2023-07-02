@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css" />
+    <title>Formulário de cadastro</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1>Formulário de cadastro</h1>
+
+        <ul>
+          <li>
+            <p>Nenhum campo pode estar vazio</p>
+          </li>
+          <li>
+            <p>Usuário só poderá conter letras e/ou números</p>
+          </li>
+          <li>
+            <p>Usuário deverá ter entre 3 a 12 caracteres</p>
+          </li>
+          <li>
+            <p>Senha precisa ter entre 6 a 12 caracteres</p>
+          </li>
+        </ul>
+
+        <form
+          action="/"
+          method="POST"
+          class="formulario">
+          <div>
+            <label for-id="nome">Nome:</label>
+            <input
+              type="text"
+              id="nome"
+              class="nome validar"
+              placeholder="firstName" />
+          </div>
+
+          <div>
+            <label for-id="sobrenome">Sobrenome:</label>
+            <input
+              type="text"
+              id="sobrenome"
+              class="sobrenome validar"
+              placeholder="lastName" />
+          </div>
+
+          <div>
+            <label for-id="cpf">Cpf:</label>
+            <input
+              type="text"
+              id="cpf"
+              class="cpf validar"
+              placeholder="cpf" />
+          </div>
+
+          <div>
+            <label for-id="usuario">Usuário:</label>
+            <input
+              type="text"
+              id="usuario"
+              class="usuario validar"
+              placeholder="user" />
+          </div>
+
+          <div>
+            <label for-id="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              class="senha validar"
+              placeholder="password" />
+          </div>
+
+          <div>
+            <label for-id="repetir-senha">Repetir Senha:</label>
+            <input
+              type="password"
+              id="repetir-senha"
+              class="repetir-senha validar"
+              placeholder="password repeat" />
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/js/validaCpf.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

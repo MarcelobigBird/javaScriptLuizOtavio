@@ -1,0 +1,6 @@
+// Site onde todos os keycode
+https://www.toptal.com/developers/keycode/table
+
+
+// Site com a documentação do prettier
+https://prettier.io/docs/en/options.html
